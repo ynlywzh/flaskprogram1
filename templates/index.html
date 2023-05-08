@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>学生信息管理系统</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+    h1 {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    </style>
+</head>
+<body>
+  <h1>请选择您要进行的操作！</h1>
+  <ul>
+    <li><a href="{{ url_for('login',next_url_for=request.path) }}">登录</a></li>
+    <li><a href="{{ url_for('register') }}">注册</a></li>
+    <li><a href="{{ url_for('query') }}">学生信息查看</a></li>
+    <li><a href="{{ url_for('add') }}">学生信息添加</a></li>
+    <li><a href="{{ url_for('delete') }}">学生信息删除</a></li>
+    <li><a href="{{ url_for('update') }}">学生信息修改</a></li>
+  </ul>
+</body>
+</html>

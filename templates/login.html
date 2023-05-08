@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>登录</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <h1>登录</h1>
+
+  <form method="POST" action="/login">
+    <label for="username">请输入用户名:</label>
+    <input type="text" id="username" name="username" required><br>
+
+    <label for="password">请输入密码:</label>
+    <input type="password" id="password" name="password" minlength="6" required><br>
+
+    <input type="submit" value="登录">
+  </form>
+</body>
+</html>
